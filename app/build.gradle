@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "edu.farmingdale.alrajab.bcs421"
-        minSdk 28
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"

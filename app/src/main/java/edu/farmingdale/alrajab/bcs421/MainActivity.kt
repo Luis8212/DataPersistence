@@ -22,8 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding.filesBtn.setOnClickListener { processFiles() }
 
         // TODO 01:SP Add another button for saving data using Shared Preferences
+        binding.Spreference.setOnClickListener { moveToSP() }
+
         // TODO 02:SP Make an activity that accept the User's first and last name and save/read/update
         //  the shared preference
+
 
         // TODO 03:DB Edit the Database page so that you store  the first name and last name of the
         //  user input (EditView)
@@ -47,5 +50,11 @@ class MainActivity : AppCompatActivity() {
      */
     private fun processDatabase() {
         startActivity( Intent(this, DatabaseActivity::class.java) )
+    }
+
+    // move to shared preference activity
+    fun moveToSP(){
+        startActivity(Intent(this@MainActivity, Spreference::class.java))
+
     }
 }
