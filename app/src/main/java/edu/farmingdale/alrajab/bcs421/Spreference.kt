@@ -29,7 +29,7 @@ class Spreference : AppCompatActivity() {
         saving.setOnClickListener { saves() }
         reading.setOnClickListener { writes() }
         updating.setOnClickListener { updates() }
-
+//
     }
 
     fun saves(){
